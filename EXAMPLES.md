@@ -333,21 +333,21 @@ Users can use any target qube specifier in the include file. However, if users a
 
 Create a new policy file at `/etc/qubes/policy.d/30-admin-clone.policy`:
 ```
-!include-service admin.vm.List               * include/admin-clone
-!include-service admin.vm.volume.List        * include/admin-clone
-!include-service admin.vm.volume.Info        * include/admin-clone
-!include-service admin.vm.property.List      * include/admin-clone
-!include-service admin.vm.property.Get       * include/admin-clone
-!include-service admin.vm.property.GetAll    * include/admin-clone
-!include-service admin.vm.tag.List           * include/admin-clone
-!include-service admin.volume.CloneFrom      * include/admin-clone
-!include-service admin.feature.List          * include/admin-clone
-!include-service admin.feature.Get           * include/admin-clone
-!include-service admin.firewall.Get          * include/admin-clone
-!include-service admin.device.block.List     * include/admin-clone
-!include-service admin.device.mic.List       * include/admin-clone
-!include-service admin.device.pci.List       * include/admin-clone
-!include-service admin.device.testclass.List * include/admin-clone
+!include-service admin.vm.List                  * include/admin-clone
+!include-service admin.vm.device.testclass.List * include/admin-clone
+!include-service admin.vm.volume.List           * include/admin-clone
+!include-service admin.vm.volume.Info           * include/admin-clone
+!include-service admin.vm.property.List         * include/admin-clone
+!include-service admin.vm.property.Get          * include/admin-clone
+!include-service admin.vm.property.GetAll       * include/admin-clone
+!include-service admin.vm.tag.List              * include/admin-clone
+!include-service admin.volume.CloneFrom         * include/admin-clone
+!include-service admin.feature.List             * include/admin-clone
+!include-service admin.feature.Get              * include/admin-clone
+!include-service admin.firewall.Get             * include/admin-clone
+!include-service admin.device.block.List        * include/admin-clone
+!include-service admin.device.mic.List          * include/admin-clone
+!include-service admin.device.pci.List          * include/admin-clone
 ```
 
 This clones the `template` qube to the `guest` qube as a TemplateVM:
